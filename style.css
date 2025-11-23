@@ -15,9 +15,9 @@
   --bg-color: #0a0a0a;
   --second-bg-color: #1a1a1a;
   --text-color: #ffffff;
-  --main-color: #91edff;
-  --accent-color: #01ddff;
-  --muted-color: #ffffff;
+  --main-color: #ffffff;
+  --accent-color: #e0e0e0;
+  --muted-color: #b0b0b0;
 }
 
 html {
@@ -54,7 +54,7 @@ section {
   justify-content: space-between;
   align-items: center;
   z-index: 5;
-  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
@@ -62,7 +62,7 @@ section {
   color: var(--text-color);
   font-weight: 800;
   cursor: pointer;
-  text-shadow: 0 0 25px var(--main-color);
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
   transition: 0.3s ease-in-out;
 }
 
@@ -131,13 +131,14 @@ section {
   position: relative;
   top: 3rem;
   border-radius: 50%;
-  box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
 
 .home-img img:hover {
-  box-shadow: 0 0 40px rgba(0, 212, 255, 0.5), 0 0 60px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.3),
+    0 0 60px rgba(255, 255, 255, 0.2);
 }
 
 .home-content p {
@@ -153,7 +154,7 @@ section {
   align-items: center;
   width: 4.5rem;
   height: 4.5rem;
-  background-color: rgba(0, 180, 212, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid var(--accent-color);
   font-size: 2.5rem;
   border-radius: 50%;
@@ -163,9 +164,9 @@ section {
 }
 
 .social-icons a:hover {
-  color: var(--text-color);
+  color: var(--bg-color);
   transform: scale(1.3) translateY(-5px);
-  box-shadow: 0 0 20px rgba(0, 180, 212, 0.4);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   background-color: var(--accent-color);
 }
 
@@ -173,7 +174,7 @@ section {
   display: inline;
   padding: 1rem 2.8rem;
   background-color: var(--accent-color);
-  box-shadow: 0 0 20px rgba(0, 180, 212, 0.3);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
   border-radius: 4rem;
   font-size: 1.6rem;
   color: black;
@@ -186,7 +187,7 @@ section {
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(0, 180, 212, 0.5);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
 }
 
 .btn-group {
@@ -203,7 +204,7 @@ section {
 }
 
 .btn-group a:nth-of-type(2):hover {
-  box-shadow: 0 0 25px rgba(0, 180, 212, 0.4);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
   background-color: var(--accent-color);
   color: black;
 }
@@ -324,7 +325,7 @@ section {
   height: 21px;
   width: 21px;
   background-color: var(--accent-color);
-  box-shadow: 0 0 20px rgba(0, 180, 212, 0.5);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   position: absolute;
   left: calc(50% - 8px);
   border-radius: 50%;
@@ -343,13 +344,13 @@ section {
   border: 2px solid var(--accent-color);
   padding: 30px 50px;
   border-radius: 4rem;
-  box-shadow: 0 0 15px rgba(0, 180, 212, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
 .timeline-content:hover {
-  box-shadow: 0 0 25px rgba(0, 180, 212, 0.4);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
 }
 
@@ -401,20 +402,20 @@ section {
 }
 
 .internships-box {
-  background: linear-gradient(135deg, var(--accent-color), var(--main-color));
+  background: linear-gradient(135deg, #ffffff, #e0e0e0);
   height: 390px;
   border-radius: 3rem;
   border: 2px solid transparent;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  box-shadow: 0 0 20px rgba(0, 180, 212, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .internships-box:hover {
-  background: #fff;
+  background: #ffffff;
   border: 2px solid var(--accent-color);
   transform: scale(1);
-  box-shadow: 0 0 30px rgba(0, 180, 212, 0.4);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
 }
 
 .internships-box .internships-info {
@@ -471,14 +472,14 @@ section {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-color);
-  box-shadow: 0 0 15px rgba(0, 180, 212, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .skill-box:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(0, 180, 212, 0.4);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
   background-color: var(--accent-color);
   color: black;
 }
@@ -495,14 +496,14 @@ section {
 .certificate-card {
   background: linear-gradient(
     135deg,
-    rgba(0, 180, 212, 0.1),
-    rgba(0, 212, 255, 0.05)
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
   );
   color: #fff;
   padding: 3rem 2.5rem;
   border-radius: 2rem;
-  border: 1px solid rgba(0, 180, 212, 0.3);
-  box-shadow: 0 0 20px rgba(0, 180, 212, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
 }
@@ -520,7 +521,7 @@ section {
 
 .certificate-card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 0 30px rgba(0, 180, 212, 0.3);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
 }
 /* CERTIFICATES END */
 
@@ -537,8 +538,8 @@ section {
   color: black;
   padding: 3rem 2.5rem;
   border-radius: 2rem;
-  border: 2px solid rgba(0, 180, 212, 0.3);
-  box-shadow: 0 0 15px rgba(0, 180, 212, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
   transition: transform 0.4s ease, background-color 0.4s ease,
     box-shadow 0.4s ease;
   cursor: pointer;
@@ -558,10 +559,10 @@ section {
 }
 
 .project-card:hover {
-  background-color: rgba(0, 180, 212, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   transform: scale(1.05);
   border: 2px solid var(--accent-color);
-  box-shadow: 0 0 30px rgba(0, 180, 212, 0.3);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
 }
 
 .project-card:nth-child(1),
@@ -569,7 +570,7 @@ section {
 .project-card:nth-child(3),
 .project-card:nth-child(4) {
   border: 2px solid var(--accent-color);
-  box-shadow: 0 0 25px rgba(0, 180, 212, 0.3);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
   transform: scale(1.02);
 }
 /* PROJECTS END */
@@ -597,7 +598,7 @@ section {
   min-height: 550px;
   max-width: 450px;
   background-color: rgba(26, 26, 26, 0.8);
-  border: 1px solid rgba(0, 180, 212, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 2rem;
   margin: 0 2rem;
   padding: 30px 60px;
@@ -614,7 +615,7 @@ section {
 
 .testimonial-item:hover {
   border: 1px solid var(--accent-color);
-  box-shadow: 0 0 30px rgba(0, 180, 212, 0.3);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
 }
 
 .testimonial-item h2 {
@@ -653,7 +654,7 @@ section {
 .testimonial-item:nth-child(1),
 .testimonial-item:nth-child(2) {
   border: 2px solid var(--accent-color);
-  box-shadow: 0 0 25px rgba(0, 180, 212, 0.3);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
   transform: scale(1.02);
 }
 /* TESTIMONIALS END */
@@ -696,15 +697,15 @@ section {
   color: var(--text-color);
   font-size: 1.8rem;
   outline: none;
-  box-shadow: 0 0 10px rgba(0, 180, 212, 0.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
   transition: 0.3s ease-in-out;
 }
 
 #contact input:hover,
 #contact textarea:hover {
-  background-color: rgba(0, 180, 212, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   color: var(--text-color);
-  box-shadow: 0 0 15px rgba(0, 180, 212, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
 #contact .send {
@@ -716,13 +717,13 @@ section {
   color: var(--text-color);
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  box-shadow: 0 0 10px rgba(0, 180, 212, 0.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
 #contact .send:hover {
   background-color: var(--accent-color);
   color: black;
-  box-shadow: 0 0 20px rgba(0, 180, 212, 0.3);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
 }
 /* CONTACT END */
 
@@ -732,7 +733,7 @@ section {
   padding: 3rem 0;
   text-align: center;
   border-top: 1px solid var(--accent-color);
-  box-shadow: 0 0 20px rgba(0, 180, 212, 0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   margin-top: 3rem;
 }
 
@@ -762,7 +763,7 @@ section {
 
 .footer-socials a:hover {
   color: #fff;
-  text-shadow: 0 0 15px var(--accent-color);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 .footer-bottom {
