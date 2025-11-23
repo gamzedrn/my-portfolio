@@ -1167,6 +1167,21 @@ section {
   .timeline-date {
     font-size: 1.6rem !important;
   }
+
+  .internships-box {
+    min-height: 280px;
+    padding: 2rem 1.5rem;
+  }
+
+  .internships-info h4 {
+    font-size: 2.2rem;
+  }
+
+  .internships-info p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
 }
 /* MEDIA QUERIES END */
+
 
