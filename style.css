@@ -1137,17 +1137,3 @@ section {
   }
 }
 /* MEDIA QUERIES END */
-
-/* JavaScript için gerekli stiller */
-.navbar.active {
-    display: flex !important;
-}
-
-.bx-x {
-    transform: rotate(90deg);
-    transition: transform 0.3s ease;
-}
-
-/* Menu icon için responsive stil */
-
-
