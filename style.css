@@ -1178,10 +1178,11 @@ section {
   }
 
   .internships-info p {
-    font-size: 1.5rem;
-    line-height: 1.5;
+   max-height: none !important;
+   height: auto !important;
   }
 }
 /* MEDIA QUERIES END */
+
 
 
