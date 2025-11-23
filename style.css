@@ -1149,18 +1149,5 @@ section {
 }
 
 /* Menu icon için responsive stil */
-@media (max-width: 992px) {
-    #menu-icon {
-        display: block !important;
-        cursor: pointer;
-        z-index: 1000;
-    }
-    
-    .navbar {
-        display: none;
-    }
-    
-    .navbar.active {
-        display: flex !important;
-    }
-}
+
+
